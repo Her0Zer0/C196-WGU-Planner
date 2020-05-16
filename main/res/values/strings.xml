@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">C196</string>
+    <string name="action_add_sample_data">Add Sample Data</string>
+    <string name="title_activity_term_edit">TermEdit</string>
+    <string name="action_delete_all_notes">Delete All Terms</string>
+    <string name="title_activity_course_list">CourseList</string>
+    <string name="title_activity_course_edit">CourseEdit</string>
+    <string-array name="status_array">
+        <item>Not Scheduled</item>
+        <item>Scheduled</item>
+        <item>Passed</item>
+        <item>Not Passed</item>
+    </string-array>
+    <string-array name="type_array">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+    <string name="title_activity_assessment_list">AssessmentList</string>
+    <string name="title_activity_assessment_edit">AssessmentEdit</string>
+</resources>

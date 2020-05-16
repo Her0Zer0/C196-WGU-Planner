@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AssessmentEdit"
+    tools:showIn="@layout/activity_assessment_edit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/default_top_margin"
+            android:padding="@dimen/default_padding"
+            >
+
+            <EditText
+                android:id="@+id/edit_assessment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name" />
+<!--=========================================================
+                Date
+=========================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edit_assessment_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="3"
+                    android:hint="Start Date" />
+
+                <ImageButton
+                    android:id="@+id/edit_assessment_cal_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCalendarClick"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_date" />
+
+            </LinearLayout>
+<!--================================================================
+            Type
+=================================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding"
+                    android:layout_weight="1"
+                    android:text="Assessment Type: " />
+
+                <Spinner
+                    android:id="@+id/edit_assessment_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+<!--===================================================================
+                Status
+===================================================================-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding"
+                    android:layout_weight="1"
+                    android:text="Assessment Status: " />
+
+                <Spinner
+                    android:id="@+id/edit_assessment_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/edit_asset_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_top_margin"
+                android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
